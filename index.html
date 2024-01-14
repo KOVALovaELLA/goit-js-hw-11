@@ -4,30 +4,47 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Search Images App</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-46aac873.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-eb6030bc.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-491f39ca.css">
   </head>
   <body>
-    <!-- <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <form>
+      <input type="text" id="search-input" placeholder="Search for images..." />
+      <button id="search-button">Search</button>
+    </form>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
- -->
-
-    <!-- Loads the specified .html file -->
-    <!--  ENOENT: no such file or directory, open '/home/runner/work/goit-js-hw-11/goit-js-hw-11/src/partials/vite-promo.html' -->
+    <div class="search-results"></div>
+    <button id="show-more-button" style="display: none">Show more</button>
+    <div id="loader" class="loader" style="display: none">
+      Loading images, please wait...
+    </div>
 
     
   </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Images App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form>
+      <input type="text" id="search-input" placeholder="Search for images..." />
+      <button id="search-button">Search</button>
+    </form>
+
+    <div class="search-results"></div>
+    <button id="show-more-button">Show more</button>
+    <div id="loader" class="loader">Loading images, please wait...</div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html> -->
